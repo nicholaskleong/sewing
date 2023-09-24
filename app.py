@@ -1,7 +1,4 @@
 import streamlit as st
-from datetime import datetime
-import boto3
-import json
 import matplotlib.pyplot as plt
 from matplotlib.patches import Circle,Rectangle
 import plotly.graph_objects as go
