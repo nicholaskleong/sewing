@@ -23,12 +23,12 @@ body_height = height + SEAM + roll + stiffener
 
 volume = math.pi*(diameter/2)** 2 * height
 
-st.write(f'Base (incl seam) : {cut_diameter:.0f}mm')
+st.subheader(f'Base (incl seam) : {cut_diameter:.0f}mm')
 st.latex('Diameter + 2  * (Seam Allowance)')
-st.write(f'Body (incl seam): {body_width:.0f} x {body_height:.0f}mm')
+st.subheader(f'Body (incl seam): {body_width:.0f} x {body_height:.0f}mm')
 st.latex('Width = Circumference + 2 * (SeamAllowance)')
 st.latex('Height  = Height + SeamAllowance + Roll +Stiffener')
-st.write(f'Approx Volume: {volume/1000000:0.2f}L')
+st.subheader(f'Approx Volume: {volume/1000000:0.2f}L')
 
 
 fig,ax = plt.subplots(figsize=(8,6))
